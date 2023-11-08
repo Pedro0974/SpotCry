@@ -49,10 +49,10 @@
         </a>
       </td>
       <td align="center">
-        <a href="https://github.com/Colaborador2" style="text-decoration: none;">
-          <img src="URL_DA_FOTO_COLABORADOR_2" width="100" height="100" style="border-radius: 50%;">
+        <a href="https://github.com/MayconPS" style="text-decoration: none;">
+          <img src="https://avatars.githubusercontent.com/u/106105543?v=4" width="100" height="100" style="border-radius: 50%;">
           <br>
-          Nome do Colaborador 2
+          Maycon Soares
         </a>
       </td>
       <td align="center">
