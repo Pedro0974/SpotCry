@@ -1,6 +1,6 @@
 // components/nav-bar/Style
 import styled from "styled-components";
-import { COLORS } from "../../constants/Colors";
+import { COLORS } from "../../constants/colors";
 
 export const ContainerNavBar = styled.div`
   position: fixed;

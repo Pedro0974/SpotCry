@@ -1,6 +1,6 @@
 // components/footer/Style
 import styled from "styled-components";
-import { COLORS } from "../../constants/Colors";
+import { COLORS } from "../../constants/colors";
 
 export const ContainerFooter = styled.div`
 
