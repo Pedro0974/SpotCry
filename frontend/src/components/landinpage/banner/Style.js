@@ -1,24 +1,44 @@
 // components/landinpage/banner/Style
-import styled from "styled-components";
+
+import styled from 'styled-components';
+// import COLORS from '../../constants/Colors'
 
 export const ContainerBanner = styled.div`
 
 `;
-export const ContainerInfos = styled.div`
+
+export const ContainerHeader = styled.div`
 
 `;
-export const InfosText = styled.div`
+
+export const TituloHeader = styled.h1`
 
 `;
-export const TitleInfo = styled.h1`
+
+export const ContextHeader = styled.p`
 
 `;
-export const ContextInfo = styled.label`
+
+export const ContainerPricings = styled.div`
 
 `;
-export const InfoButton = styled.button`
+
+export const Pricing = styled.div`
 
 `;
-export const ContainerDecorations = styled.div`
+
+export const TypePricing = styled.h2`
+
+`;
+
+export const PricingFlat = styled.p`
+
+`;
+
+export const ListOptions = styled.li`
+
+`;
+
+export const ButtonGetStarted = styled.button`
 
 `;

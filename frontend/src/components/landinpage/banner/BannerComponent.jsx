@@ -1,37 +1,62 @@
 // components/landinpage/banner/BannerComponents
+
 import React from "react";
-import { 
+import {
     ContainerBanner,
-    ContainerInfos,
-    InfosText,
-    TitleInfo,
-    ContextInfo,
-    InfoButton,
-    ContainerDecorations
-} from "./Style";
+    ContainerHeader,
+    TituloHeader,
+    ContextHeader,
+    ContainerPricings,
+    Pricing,
+    TypePricing,
+    PricingFlat,
+    ListOptions,
+    ButtonGetStarted
 
-// TODO: o container banner deve ser um retangulo 
-// TODO: no meio da tela com efeito blur
-
-// TODO: containerinfos tem dois elementos dentro
-// TODO: um elemntro infostext para um tituo e um texto
-// TODO: outro elemento para botao de chamada 
-
-// TODO: e um containerdecorations para ter uma decoração abaixo das infos
+} from './Style'
 export const BannerComponent = () => {
+
+    const listPricing = [
+        {
+            type: 'Free',
+            pricing: 'Free for everyone',
+            listOptions: [],
+            contextButton: 'Get started with free'
+        },
+        {
+            type: 'Standard',
+            pricing: '$8 per user/mounth',
+            listOptions: [],
+            contextButton: 'Get started with standard'
+        },
+        {
+            type: 'Plus',
+            pricing: '$14 per user/mounth',
+            listOptions: [],
+            contextButton: 'Get started with plus'
+        }
+    ]
     
     return (
         <ContainerBanner>
-            <ContainerInfos>
-                <InfosText>
-                    <TitleInfo></TitleInfo>
-                    <ContextInfo></ContextInfo>
-                </InfosText>
-                <InfoButton></InfoButton>
-            </ContainerInfos>
-            <ContainerDecorations>
+            <ContainerHeader>
+                <TituloHeader></TituloHeader>
+                <ContextHeader></ContextHeader>
+            </ContainerHeader>
 
-            </ContainerDecorations>
+            <ContainerPricings>
+                {/* fazer o mapeamento dos preços */}
+                <Pricing>
+                    <TypePricing></TypePricing>
+                    <PricingFlat></PricingFlat>
+                    <ul>
+                        {/* mapear lista de opções */}
+                        <ListOptions></ListOptions>
+                    </ul>
+                    <ButtonGetStarted></ButtonGetStarted>
+                </Pricing>
+            </ContainerPricings>
+            
         </ContainerBanner>
     )
 }
