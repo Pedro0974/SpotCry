@@ -56,10 +56,10 @@
         </a>
       </td>
       <td align="center">
-        <a href="https://github.com/Colaborador3" style="text-decoration: none;">
-          <img src="URL_DA_FOTO_COLABORADOR_3" width="100" height="100" style="border-radius: 50%;">
+        <a href="https://github.com/uVictorA" style="text-decoration: none;">
+          <img src="https://avatars.githubusercontent.com/u/126802636?v=4" width="100" height="100" style="border-radius: 50%;">
           <br>
-          Nome do Colaborador 3
+          Victor Amorim
         </a>
       </td>
     </tr>
