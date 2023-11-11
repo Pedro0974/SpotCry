@@ -1,11 +1,11 @@
 // components/landinpage/main/MaincComponents
 import React from "react";
-import {
-    ContainerMain,
-    FirstColMain,
-    OthersColMain
+// import {
+//     ContainerMain,
+//     FirstColMain,
+//     OthersColMain
 
-} from "./Style";
+// } from "./Style";
 
 // TODO: primeira coluna deve conter infos 
 // TODO: que vao preencher as outras colunas como se fosse uma tabela

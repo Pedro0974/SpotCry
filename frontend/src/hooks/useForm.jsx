@@ -1,13 +1,21 @@
 // hooks/useForm
 
 import { useState } from "react";
-export const useForm = (initialValues) => {
-  const [values, setValues] = useState(initialValues);
-  const handleInputChange = (e) => {
-    setValues({ ...values, [e.target.name]: e.target.value });
+
+ const useForm = (initialState) => {
+  const [form, setForm] = useState(initialState);
+
+  const onChangeForm = (event) => {
+    const { name, value } = event.target;
+    setForm({ ...form, [name]: value });
   };
+
+
   const cleanFields = () => {
-    setValues(initialValues)
-   }
-  return { values, handleInputChange, cleanFields };
+   setForm(initialState)
+  }
+
+  return [ form, onChangeForm, cleanFields ];
 };
+
+export default useForm; 
