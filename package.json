@@ -1,0 +1,14 @@
+{
+  "name": "spotcry-1",
+  "version": "1.0.0",
+  "description": "Projeto Desenvolvido Para Conclusao de Um Trabalho do 4° Periodo da Faculdade de Analise e Desenvolvimento de Sistemas na Materia de Desenvolvimento FrontEnd II. O Intuito do Trabalho é Construir uma Interface de Usuario Para Consumir uma API  de um Player de Musicas Criada Pelo Professor [Flavio Motta](https://github.com/FlavioAAMotta).",
+  "main": "index.js",
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "author": "",
+  "license": "ISC"
+}

@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/img-redundant-alt */
 // pages/LoginView
 
 import React from "react";
@@ -7,9 +8,12 @@ import {
     Form,
     LabelForm,
     StyledInput,
-    StyledButton
-
+    StyledButton,
+    ImageLog,
+    ImageLogo
   } from "./Style";
+  import Logo from "../assets/Logo.svg"
+  import imageLogin from "../assets/astro.png"
 import useForm from "../hooks/useForm";
 import { useNavigate } from "react-router-dom";
 
@@ -24,8 +28,10 @@ export const LoginView = () => {
 
   return (
     <ContainerForm>
+      <ImageLog src={imageLogin} alt="imageLogin"/>
         <Form>
-            <LabelForm>Login</LabelForm>
+          <ImageLogo src={Logo} alt="Logo" />
+            <LabelForm>FAÇA SEU LOGIN</LabelForm>
             <div>
                 <StyledInput type="email" name="email" onChange={onChange} required={true} value={form.email}/>
             </div>
@@ -33,7 +39,7 @@ export const LoginView = () => {
             <div>
                 <StyledInput type="password" name="password" onChange={onChange} required={true} value={form.password}/>
             </div>
-            <StyledButton type={"submit"} value={"Entrar"} onClick={onSubmitLogin}/>
+            <StyledButton type={"submit"} value={"Entrar"} onClick={onSubmitLogin}>Login</StyledButton>
 
         </Form>
 
@@ -43,15 +49,3 @@ export const LoginView = () => {
 };
 
 
-// <FormContainer>
-//       <StyledForm>
-//         <LoginTitle>Sinta a música, viva a emoção</LoginTitle>
-//         <div>
-//           <StyledInput type="email" name="email" onChange={onChange} required={true} value={form.email} />
-//         </div>
-//         <div>
-//           <StyledInput type="password" name="password" onChange={onChange} required={true} value={form.password} />
-//         </div>
-//         <StyledButton type={"submit"} value={"Entrar"} onClick={onSubmitLogin}/>
-//       </StyledForm>
-//     </FormContainer>
