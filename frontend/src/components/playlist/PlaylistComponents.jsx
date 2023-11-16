@@ -11,7 +11,27 @@ import React from "react";
 // 4° - Criar modal de criar playlist
 // 5° - Criar botões de editar e deletar na tabela
 
-export const Playlist = () => {
+export const Playlist = (user) => {
+
+    // funções para criar a playlist 
+    const [playlistData, setPlaylistData] = useState({});
+    
+      const token = localStorage.getItem('token');
+    
+      const handleCreatePlaylist = async () => {
+        setPlaylistData = {
+            userId: user,
+            songs: [],
+            description: '',
+            name: ''
+        }
+        try {
+          const result = await createPlaylist(token, playlistData);
+          console.log('Playlist criada com sucesso:', result);
+        } catch (error) {
+          console.error('Erro ao criar a playlist:', error);
+        }
+      };
 
     return (
         <>
