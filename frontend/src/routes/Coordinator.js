@@ -14,3 +14,6 @@ export const goToHomePage = (navigate) => {
   export const goBack = (navigate) => {
     navigate(-1);
   };
+  export const goToLadingPage = (navigate) => {
+    navigate("/ladingpage");
+  };
